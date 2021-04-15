@@ -1,0 +1,40 @@
+:root {
+    --main-color: #383736;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+}
+h1,h2,h3,p {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container {
+    max-width: 1240px;
+    width: 100%;
+    padding: 50px 20px;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+}
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    justify-content: center;
+    grid-gap: 20px;
+}
+.card {
+    &__img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}
